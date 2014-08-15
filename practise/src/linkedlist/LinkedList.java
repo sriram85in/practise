@@ -53,10 +53,10 @@ public class LinkedList<E> {
 	public void print() {
 		Node temp = head;
 		while(temp != null) {
-			System.out.println(temp.item + " -->");
+			System.out.print(temp.item + " -->");
 			temp = temp.next;
 		}
+		System.out.print("null");
+		System.out.println();
 	}
-	
-	
 }
