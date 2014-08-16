@@ -59,4 +59,19 @@ public class LinkedList<E> {
 		System.out.print("null");
 		System.out.println();
 	}
+	
+	/*
+	 * Iterative reverse
+	 */
+	public void reverse() {
+		Node prev = null;
+		Node next = null;
+		while(head != null) {
+			next = head.next;
+			head.next = prev;
+			prev = head;
+			head = next;
+		}
+		head = prev;
+	}
 }
